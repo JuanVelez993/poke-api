@@ -95,7 +95,7 @@ body {
     flex-direction: row;
     border-radius: 5px;
     box-shadow: 1px 1px 3px 0.4em rgb(112, 112, 112);
-    background-color: #212426;
+    background-color: #3e4f5a;
     padding: 1%;
     align-items: center;
     justify-content: center;
@@ -104,9 +104,9 @@ body {
 }
 
 .card:hover {
-    background-color: #edd871;
+    background-color: #8f8243;
 }
 
 .stock-alert {
-    border-left: 5px solid #d93838;
+    border-left: 5px solid #05cc15;
 }

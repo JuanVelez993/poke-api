@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import PokeCard from './PokeCard'
 
 
 
@@ -22,15 +23,7 @@ export default function DisplayPoke() {
                 {list.map((item:any) => {
                     return <div className="d-flex flex-row my-2 card stock-alert"
                         key={item.name}>
-                        <div className="container">
-                            <div className="row">
-                                <div className="d-flex flex-row mt-1">
-                                    <div className="col"><b>{item.name}</b></div>
-                                    
-                                  </div>
-                                
-                            </div>
-                        </div>
+                        <PokeCard name={item.name}/>
                     </div>
                 })}
             </div>
