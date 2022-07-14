@@ -1,13 +1,6 @@
-import React, { useState, useEffect} from 'react';
-
-
-
-interface IPokemon {
-    id: number;
-    name: string;
-    image: string;
-    type: string;
-}
+import { Anchor, Button } from '@mantine/core';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const PokeCard: React.FC<{ name: string }> = ({ name }) => {
@@ -19,32 +12,33 @@ const PokeCard: React.FC<{ name: string }> = ({ name }) => {
         fetch(ROOT)
             .then(response => response.json())
             .then(data => setList(data))
-            
+
     }, [])
 
-    
-    
 
-     return (
+
+
+    return (
         <>
-            <div>
-            <span className="card--id">{list.id}</span>
+            <div className="types" ><Anchor component={Link} to="/pokemon/details" state={{ selectedPoke: name }}>
+                <div className="types">
+                    <p className="textLink">{list.id}. {list.name}</p>
+                </div>
+                <div className="types">
+                    <img  src={list.sprites?.front_default} />
+                </div>
+
+                <br />
+                <div className="typesSingle">
+                    {list.types?.map((item: any) => {
+                        return <Button className="typeBtn" color="violet" radius="xl" size="xs" key={item.type.name}>{item.type.name}</Button>
+                    })}
+                </div>
+            </Anchor>
             </div>
-            <div>
-            <img className="card--image" src={list.sprites?.front_default} />
-            </div>
-            <div>
-            <p className="card--name">{list.name}</p>
-            </div>
-            <br/>
-            <div>
-                 {list.types?.map((item: any) => {
-                     return <p className="card--id" key={item.type.name}>{item.type.name}</p>
-                 })}
-            </div>
-            
+
         </>
-       
+
     );
 };
 
