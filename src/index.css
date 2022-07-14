@@ -89,3 +89,24 @@ body {
     transform-origin: left;
     color: #fff;
 }
+
+.card {
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0.4em rgb(112, 112, 112);
+    background-color: #212426;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #fff;
+}
+
+.card:hover {
+    background-color: #edd871;
+}
+
+.stock-alert {
+    border-left: 5px solid #d93838;
+}
