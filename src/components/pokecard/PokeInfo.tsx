@@ -29,7 +29,7 @@ const PokeCard: React.FC = () => {
 
     return (
 
-        <div className="d-flex flex-row my-8 cart stock-alert">
+        <div className="d-flex flex-row my-8 cart stock-alert ">
             <div className="types">
                 <p >{list.id}. {list.name}</p>
             </div>

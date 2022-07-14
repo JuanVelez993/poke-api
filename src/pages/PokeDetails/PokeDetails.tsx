@@ -8,7 +8,7 @@ import './PokeDetails.css';
 
 
 const PokeDetails= () => {
-    return (<div className="singlePoke">
+    return (<div className="singlePoke md:container md:mx-auto ">
 
         <PokeInfo/>
         <br/>
