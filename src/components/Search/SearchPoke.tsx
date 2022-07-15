@@ -10,10 +10,10 @@ import PokeCard from '../pokecard/PokeCard';
 
 
 const SearchPoke: React.FunctionComponent = () => {
-    const { user } = useSelector((state: RootState) => state.logged)
+    const { login} = useSelector((state: RootState) => state.logged)
     const navigate = useNavigate()
     useEffect(() => {
-        if (user === false) {
+        if (login.loged === false) {
             navigate('/login')
         }
     })

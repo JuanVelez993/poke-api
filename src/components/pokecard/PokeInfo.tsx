@@ -34,7 +34,7 @@ const PokeCard: React.FC = () => {
                 <p ><b>{list.id}. {list.name}</b></p>
             </div>
             <div className="types">
-                <img className="bigImg" src={list.sprites?.front_default} />
+                <img className="bigImg" src={list.sprites?.other['official-artwork'].front_default} />
             </div>
 
             <br />

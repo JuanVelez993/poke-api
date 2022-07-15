@@ -25,7 +25,7 @@ const PokeCard: React.FC<{ name: string }> = ({ name }) => {
                     <p className="textLink"><b>{list.id}. {list.name}</b></p>
                 </div>
                 <div className="types">
-                    <img  src={list.sprites?.front_default} />
+                    <img src={list.sprites?.front_default} />
                 </div>
 
                 <br />
