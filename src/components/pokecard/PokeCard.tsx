@@ -22,7 +22,7 @@ const PokeCard: React.FC<{ name: string }> = ({ name }) => {
         <>
             <div className="types" ><Anchor component={Link} to="/pokemon/details" state={{ selectedPoke: name }}>
                 <div className="types">
-                    <p className="textLink">{list.id}. {list.name}</p>
+                    <p className="textLink"><b>{list.id}. {list.name}</b></p>
                 </div>
                 <div className="types">
                     <img  src={list.sprites?.front_default} />

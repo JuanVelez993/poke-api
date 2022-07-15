@@ -31,7 +31,7 @@ const PokeCard: React.FC = () => {
 
         <div className="d-flex flex-row my-8 cart stock-alert ">
             <div className="types">
-                <p >{list.id}. {list.name}</p>
+                <p ><b>{list.id}. {list.name}</b></p>
             </div>
             <div className="types">
                 <img className="bigImg" src={list.sprites?.front_default} />

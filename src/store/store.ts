@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-import { logInReducer } from "./reducers/userSlice";
+import logInReducer  from "./reducers/userSlice";
 
 
 const store = configureStore({
