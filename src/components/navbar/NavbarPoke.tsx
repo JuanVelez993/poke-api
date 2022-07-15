@@ -14,10 +14,10 @@ const NavbarPoke = () => {
                 <div className='flex flex-row'>
                     <Link to="/"><img className="nav__logo" src='https://img.icons8.com/color/48/000000/pokeballs.png'></img></Link>
                     <ul className='nav__list'>
-                        <li className='nav__item'>
+                        <li className='nav__item '>
                             <Link to="/" className='nav__link'>PokeList</Link>
                         </li>
-                        <li className='nav__item'>
+                        <li className='nav__item '>
                             <Link to="/search" className='nav__link'>Buscar Pokemon</Link>
                         </li>
                     </ul>

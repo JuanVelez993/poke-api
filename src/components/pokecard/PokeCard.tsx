@@ -15,9 +15,6 @@ const PokeCard: React.FC<{ name: string }> = ({ name }) => {
 
     }, [])
 
-
-
-
     return (
         <>
             <div className="types" ><Anchor component={Link} to="/pokemon/details" state={{ selectedPoke: name }}>
@@ -31,7 +28,7 @@ const PokeCard: React.FC<{ name: string }> = ({ name }) => {
                 <br />
                 <div className="typesSingle">
                     {list.types?.map((item: any) => {
-                        return <Button className="typeBtn" color="violet" radius="xl" size="xs" key={item.type.name}>{item.type.name}</Button>
+                        return <Button className="typeBtn" color="violet" radius="xl" size="xs" key={item.type.name} >{item.type.name}</Button>
                     })}
                 </div>
             </Anchor>

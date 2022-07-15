@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'pixolde', sans-serif;
 }
 
 html,
@@ -62,14 +62,15 @@ body {
 
 .nav__item {
     vertical-align: middle;
+    /*margin-top: 1px;*/
 }
 
 .nav__link {
     font-size: 0.8rem;
+    /*margin-top: 4px;*/
     display: inline-block;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    position: relative;
 }
 
 .nav__link::after {
